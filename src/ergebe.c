@@ -63,7 +63,7 @@ void loop() {
 					buttonState = digitalRead(buttonPin);
 					if (buttonState != lastButtonState) {
 						if (buttonState == HIGH) {
-						buttonPushCounter++;
+							buttonPushCounter++;
 						}
 					}
 					lastButtonState = buttonState;
@@ -111,7 +111,8 @@ void loop() {
 						}
 					}
 					lastButtonState = buttonState;
-					if( buttonPushCounter != 0){goto label; }}
+					if( buttonPushCounter != 0){goto label; }
+				}
   
 					for(t = 0; t < 255; t++){//whote  255,255,255
 						if(r == 254){r = 254;}else{r++;}
@@ -137,7 +138,7 @@ void loop() {
 						buttonState = digitalRead(buttonPin);
 						if (buttonState != lastButtonState) {
 							if (buttonState == HIGH) {
-							buttonPushCounter++;
+								buttonPushCounter++;
 							}
 						}
 						lastButtonState = buttonState;
